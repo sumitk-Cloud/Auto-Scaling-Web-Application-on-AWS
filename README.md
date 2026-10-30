@@ -14,7 +14,8 @@ An e-commerce application crashed during peak sales because of traffic spikes. M
 ![Architecture Diagram](screenshots/architecture-diagram.png)
 
 
-| Component | |---|---|
+| Component | 
+|---|---|
 | VPC |
 | Public subnets | `
 | Internet Gateway |
