@@ -14,18 +14,28 @@ An e-commerce application crashed during peak sales because of traffic spikes. M
 ![Architecture Diagram](screenshots/architecture-diagram.png)
 
 
-| Component | 
-|---|---|
+## Component 
+
 | VPC |
-| Public subnets | `
+
+| Public subnets | 
+
 | Internet Gateway |
-| Route table | 
-| Security groups | `
+
+| Route table |
+
+| Security groups |
+
 | Launch template | 
+
 | Target group | 
+
 | Load balancer | 
+
 | Auto Scaling Group | 
+
 | Scaling policy |
+
 | Monitoring | 
 
 ## 3. Implementation Summary
@@ -48,7 +58,7 @@ An e-commerce application crashed during peak sales because of traffic spikes. M
 | Target group | Terminated instance moved to draining/unhealthy |
 | ASG activity | New instance launched automatically, capacity restored to 2 |
 
-Screenshots: (screenshots/image5.png)
+Screenshots: ![ASG activity](screenshots/image5.png)
 
 ### 4.2 Load test and scaling validation
 
@@ -64,31 +74,32 @@ Screenshots: (screenshots/image5.png)
 Screenshots:
 ### 1.CPU utilization graph
 
-(screenshots/image2.png)
+![CPU utilization graph](screenshots/image2.png)
 
 ### 2. Alarm status while uploding load
 
-(screenshots/image3.png) 
+![Alarm status while uploding load
+](screenshots/image3.png) 
 
-### 3.AAuto scaling group setup
-(screenshots/image4.png)
+### 3.Auto scaling group setup
+![Auto scaling group setup](screenshots/image4.png)
 
 ### 4.  Target group status
-(screenshots/image1.png)
+![Target group status](screenshots/image1.png)
 
-### 2. Targets
-(screenshots/image6.png)
+### 5. Targets
+![Targets](screenshots/image6.png)
 
-### 2. Alarm status after 
-(screenshots/image7.png)
-### 2. Load balancer setup
-(screenshots/image8.png)
+### 6. Alarm status after 
+![ Alarm status after ](screenshots/image7.png)
+### 7. Load balancer setup
+![Load balancer setup](screenshots/image8.png)
 
-### 2. Aatificial load 
-(screenshots/image9.png)
+### 8. Aatificial load 
+![Aatificial load ](screenshots/image9.png)
 
-### 2.Webapp homepage
-(screenshots/image10.png`)
+### 9.Webapp homepage
+![Webapp homepagep](screenshots/image10.png`)
 
 
 
