@@ -11,20 +11,31 @@ An e-commerce application crashed during peak sales because of traffic spikes. M
 
 ## 2. Architecture
 
-![Architecture Diagram](aarchitecture-diagram.png)
+![Architecture Diagram](screenshots/architecture-diagram.png)
 
 
-| Component | |---|---|
+## Component 
+
 | VPC |
-| Public subnets | `
+
+| Public subnets | 
+
 | Internet Gateway |
-| Route table | 
-| Security groups | `
+
+| Route table |
+
+| Security groups |
+
 | Launch template | 
+
 | Target group | 
+
 | Load balancer | 
+
 | Auto Scaling Group | 
+
 | Scaling policy |
+
 | Monitoring | 
 
 ## 3. Implementation Summary
@@ -47,7 +58,7 @@ An e-commerce application crashed during peak sales because of traffic spikes. M
 | Target group | Terminated instance moved to draining/unhealthy |
 | ASG activity | New instance launched automatically, capacity restored to 2 |
 
-Screenshots: `screenshots/image5.png`
+Screenshots: ![ASG activity](screenshots/image5.png)
 
 ### 4.2 Load test and scaling validation
 
@@ -60,7 +71,35 @@ Screenshots: `screenshots/image5.png`
 | Scale-in | After load stopped, `AlarmLow` triggered and capacity returned to 2 (about 15 minutes) |
 | Failed requests (ab) | `<value>` (fill in) |
 
-Screenshots: `screenshots/image2.png`, `screenshots/image3.png`, `screenshots/image4.png`, `screenshots/image1.png`, `screenshots/image6.png`, `screenshots/image7.png`, `screenshots/image8.png`, `screenshots/image9.png`, `screenshots/image10.png`
+Screenshots:
+### 1.CPU utilization graph
+
+![CPU utilization graph](screenshots/image2.png)
+
+### 2. Alarm status while uploding load
+
+![Alarm status while uploding load
+](screenshots/image3.png) 
+
+### 3.Auto scaling group setup
+![Auto scaling group setup](screenshots/image4.png)
+
+### 4.  Target group status
+![Target group status](screenshots/image1.png)
+
+### 5. Targets
+![Targets](screenshots/image6.png)
+
+### 6. Alarm status after 
+![ Alarm status after ](screenshots/image7.png)
+### 7. Load balancer setup
+![Load balancer setup](screenshots/image8.png)
+
+### 8. Aatificial load 
+![Aatificial load ](screenshots/image9.png)
+
+### 9.Webapp homepage
+![Webapp homepagep](screenshots/image10.png`)
 
 
 
